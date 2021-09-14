@@ -24,6 +24,8 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
               "src/styles.css"
             ],
             "scripts": []
@@ -88,9 +90,16 @@
               "src/assets"
             ],
             "styles": [
+              "./node_modules/bootstrap/dist/css/bootstrap.min.css",
+              "./node_modules/ngx-bootstrap/datepicker/bs-datepicker.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/chart.js/dist/Chart.min.js"
+            ],
+            "allowedCommonJsDependencies": [
+              "chart.js"
+            ]
           }
         },
         "lint": {
@@ -119,6 +128,7 @@
           }
         }
       }
-    }},
+    }
+  },
   "defaultProject": "demo"
 }
