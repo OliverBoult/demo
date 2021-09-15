@@ -5,14 +5,16 @@ import { ChartsModule } from 'ng2-charts';
 
 import { ChartRoutingModule } from './chart-routing.module';
 import { ChartComponent } from './chart.component';
-import { ChartsHomeComponent } from './charts-home/charts-home.component';
 import { ChartsInputComponent } from './charts-input/charts-input.component';
+import { PointDisplayComponent } from './point-display/point-display.component';
+import { ChartDisplayComponent } from './chart-display/chart-display.component';
 
 @NgModule({
   declarations: [
-    ChartsHomeComponent, 
-    ChartsInputComponent, 
+    ChartsInputComponent,
     ChartComponent,
+    PointDisplayComponent,
+    ChartDisplayComponent,
   ],
   imports: [
     CommonModule,
