@@ -1,9 +1,15 @@
 <div>
-  <form [formGroup]="chartInput">
-  <input formControlName="input-x">
-  
-  <input formControlName="input-y">
+  <form [formGroup]="pointForm">
+
+    <div class="mb-3">
+      <label class="form-label" for="x">X value</label>
+      <input type="number" class="form-control" formControlName="x">
+    </div>
+
+    <div class="mb-3">
+      <label class="form-label" for="y">Y value</label>
+      <input type="number" class="form-control" formControlName="y">
+    </div>
+
   </form>
 </div>
-
-

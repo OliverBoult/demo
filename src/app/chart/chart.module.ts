@@ -1,21 +1,26 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { ReactiveFormsModule } from '@angular/forms';
+import { ChartsModule } from 'ng2-charts';
 
 import { ChartRoutingModule } from './chart-routing.module';
-import { ChartsHomeComponent } from './charts-home/charts-home.component';
+import { ChartComponent } from './chart.component';
 import { ChartsInputComponent } from './charts-input/charts-input.component';
-import { ChartsModule } from 'ng2-charts';
-import { ReactiveFormsModule } from '@angular/forms';
-
+import { PointDisplayComponent } from './point-display/point-display.component';
+import { ChartDisplayComponent } from './chart-display/chart-display.component';
 
 @NgModule({
-  declarations: [ChartsHomeComponent, ChartsInputComponent],
+  declarations: [
+    ChartsInputComponent,
+    ChartComponent,
+    PointDisplayComponent,
+    ChartDisplayComponent,
+  ],
   imports: [
     CommonModule,
     ChartRoutingModule,
     ChartsModule,
-    ReactiveFormsModule
+    ReactiveFormsModule,
   ],
-  exports: [ChartsHomeComponent, ChartsInputComponent]
 })
-export class ChartModule { }
+export class ChartModule {}
